@@ -1,0 +1,22 @@
+/*Le tri par insertion est un algorithme de tri simple qui fonctionne de la même manière que les cartes à jouer. 
+Chaque fois que nous prenons une nouvelle carte, nous la plaçons au bon endroit dans notre main.
+Chaque fois, nous ne travaillons qu'avec le premier élément i-1 du tableau
+Choisissez l'élément arr[i] et insérez-le dans la séquence triée du tableau de 0 à i-1.*/
+
+
+Algorithme "Tri par insertion"
+
+Variables :
+  arr : tableau à trier
+  n : taille du tableau
+
+Procédure "Tri par insertion" :
+  Pour i allant de 1 à n-1 :
+    key <- arr[i]
+    j <- i-1
+    Tant que j >= 0 et arr[j] > key :
+      arr[j+1] <- arr[j]
+      j <- j-1
+    arr[j+1] <- key
+
+Fin de l'algorithme

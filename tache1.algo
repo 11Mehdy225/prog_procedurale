@@ -1,0 +1,37 @@
+/*Il vous est demandé d'écrire un algorithme qui remplit les conditions suivantes :  
+Nom : Produit de points
+Description :
+Ecrire une fonction, appelée dot_product qui calcule dans la variable ps, 
+le produit dot(scalaire) de v1 et v2 (v1 et v2 sont des vecteurs de l'IR).
+Ecrire un algorithme qui détermine, pour n couples de vecteurs donnés, si deux vecteurs 
+de IR donné sont orthogonaux, en appelant la procédure définie dans la question précédente. 
+Le produit point de deux vecteurs orthogonaux est nul.*/
+
+
+
+
+Algorithme "Produit de points"
+
+Variables :
+  v1 : vecteur de l'IR
+  v2 : vecteur de l'IR
+  ps : produit de points (résultat)
+
+Fonction dot_product(v1, v2) :
+  ps <- 0
+  Pour i allant de 0 à la taille de v1 :
+    ps <- ps + (v1[i] * v2[i])
+  Retourner ps
+
+Procédure "Déterminer si deux vecteurs sont orthogonaux" :
+  Lire n (le nombre de couples de vecteurs donnés)
+  Pour chaque couple de vecteurs :
+    Lire v1
+    Lire v2
+    ps <- dot_product(v1, v2)
+    Si ps = 0 :
+      Afficher "Les vecteurs v1 et v2 sont orthogonaux."
+    Sinon :
+      Afficher "Les vecteurs v1 et v2 ne sont pas orthogonaux."
+
+Fin de l'algorithme
